@@ -1,0 +1,419 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+
+<!--<div class="row navbar top-menu text-center navbar-static-top text-height-top-menu"-->
+<!--style="position: -webkit-sticky; position: sticky; top: 0;">-->
+<!--<div class="col-lg-2 col-lg-offset-2">-->
+<!--<div><a class="top-text-menu" href="#">Личная информация</a></div>-->
+<!--</div>-->
+<!--<div class="col-lg-2">-->
+<!--<div><a class="top-text-menu" href="#">Опыт</a></div>-->
+<!--</div>-->
+<!--<div class="col-lg-2">-->
+<!--<div><a class="top-text-menu" href="#">JavaScript</a></div>-->
+<!--</div>-->
+<!--<div class="col-lg-2">-->
+<!--<div><a class="top-text-menu" href="#">О себе</a></div>-->
+<!--</div>-->
+<!--<div class="row grey-line"></div>-->
+<!--</div>-->
+
+
+<nav role="navigation" class="row navbar top-menu text-center navbar-default navbar-static-top text-height-top-menu"
+     style="position: -webkit-sticky; position: sticky; top: 0;background-color: white">
+    <!-- Логотип и мобильное меню -->
+    <div class="navbar-header">
+        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+    </div>
+    <!-- Навигационное меню -->
+    <div id="navbarCollapse" class="collapse navbar-collapse">
+        <div class="col-lg-3 col-md-3 col-sm-3"></div>
+        <div class="nav navbar-nav col-lg-2 col-md-2 col-sm-2">
+            <li><a href="#">Личная информация</a></li>
+        </div>
+        <div class="nav navbar-nav col-lg-2 col-md-2 col-sm-2">
+            <li><a href="#">Опыт</a></li>
+        </div>
+        <div class="nav navbar-nav col-lg-2 col-md-2 col-sm-2">
+            <li><a href="#">JavaScript</a></li>
+        </div>
+        <div class="nav navbar-nav col-lg-2 col-md-2 col-sm-2">
+            <li><a href="#">О себе</a></li>
+        </div>
+
+
+        <!--<ul class="nav navbar-nav">-->
+        <!--<li><a href="#">Личная информация</a></li>-->
+        <!--<li><a href="#">Опыт</a></li>-->
+        <!--<li><a href="#">JavaScript</a></li>-->
+        <!--<li><a href="#">О себе</a></li>-->
+        <!--</ul>-->
+        <!-- Поиск по сайту -->
+
+    </div>
+
+    <div class="row grey-line"></div>
+</nav>
+
+
+<div class="row application text-center">Анкета</div>
+
+<div class="row first-icon text-center">
+    <img src="{% static 'images/icon_1.png' %}"/>
+</div>
+
+<div class="row personal-inf text-center">Личная информация</div>
+
+<div class="row">
+    <form role="form">
+        <div class="form-group">
+            <div class="col-lg-4 col-lg-offset-4 form-group">
+                <input type="text" class="form-control" id="name" name="name" placeholder="ФИО" required>
+            </div>
+            <div class="col-lg-2 col-lg-offset-5">
+                <input type="date" class="form-control" id="date" placeholder="Год рождения" name="date">
+                <br>
+            </div>
+            <div class="col-lg-4 col-lg-offset-4 form-group">
+                <input type="text" class="form-control" id="counti" name="counti" placeholder="Место проживания"
+                       required>
+            </div>
+            <div class="col-lg-4 col-lg-offset-4 form-group">
+                <input type="text" class="form-control" id="skype" name="skype" placeholder="Skype" required>
+            </div>
+            <div class="col-lg-4 col-lg-offset-4 form-group">
+                <input type="text" class="form-control" id="email" name="email" placeholder="E-mail" required>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="row sekond-icon text-center">
+    <img src="{% static 'images/icon_2.png' %}"/>
+</div>
+
+<div class="row experience-inf text-center">Расскажите о своем опыте</div>
+
+<div class="row experience-checkbox">
+    <div class="col-lg-3 col-lg-offset-2">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                БЭМ/OOCSS
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                Stylus/LESS/SASS
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                Работаю с SVG
+            </label>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                Верстаю сематично
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                ES2015/ES2016
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                Gulp/GRUNT
+            </label>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                Webpack
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                JQuery
+            </label>
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" value="">
+                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                Использую Git
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="row three-icon text-center">
+    <img src="{% static 'images/icon_3.png' %}"/>
+</div>
+
+<div class="row level-inf text-center">Уровни владения JavaScript</div>
+
+
+<div class="row range-padding">
+    <style>
+
+
+        :root {
+            /* TIP: use same color to disable gradient */
+            --slider-fill-color1: rgba(203, 177, 240, 0.87);
+            --slider-fill-color2: rgb(68, 89, 148);
+            --slider-background: rgba(193, 193, 193, 0.3);
+            --thumb-size: 15px;
+            --thumb-color: rgba(0, 36, 157, 0.88);
+            --bar-height: 5px;
+            /* add more clickable area to trigger
+               INFO: use 'none' to disable  */
+            --slider-border: 10px solid transparent;
+        }
+
+        /*********** Generic styles ***********/
+
+        input[type='range']::-webkit-slider-runnable-track,
+        input[type='range']::-webkit-slider-thumb,
+        input[type='range'] {
+            -webkit-appearance: none;
+        }
+
+        input[type='range'] {
+            width: 100%;
+            background-clip: content-box;
+            margin: 0;
+        }
+
+        input[type='range']:focus {
+            outline: none;
+        }
+
+        .vertical-range {
+            transform: rotate(-90deg);
+            transform-origin: 100% 0%;
+        }
+
+        /* END Generic styles */
+
+        input[type='range'] {
+            background-color: var(--slider-background);
+            border-top: var(--slider-border);
+            border-bottom: var(--slider-border);
+        }
+
+        input[type='range']::-webkit-slider-runnable-track {
+            height: var(--bar-height);
+            border-radius: 0;
+            background: linear-gradient(90deg, var(--slider-fill-color1), var(--slider-fill-color2)) 0 100% no-repeat content-box;
+        }
+
+        input[type='range']::-webkit-slider-thumb {
+            width: var(--thumb-size);
+            height: var(--thumb-size);
+            /* round button */
+            border-radius: 50%;
+            transform: translateY(calc(var(--bar-height) - var(--thumb-size) / 2));
+            background-color: var(--thumb-color);
+            border: none;
+        }
+
+        /* hover style */
+        input[type='range']:hover {
+            filter: brightness(150%);
+        }
+
+        input[type='range']::-webkit-slider-thumb:hover {
+
+        }
+
+        input[type='range']::-webkit-slider-thumb:active {
+
+        }
+
+        /********************* CUSTOM styles ********************/
+        #range2::-webkit-slider-runnable-track {
+            background: linear-gradient(90deg, #fff, #fff) 0 100% no-repeat content-box;
+        }
+
+        #range2::-webkit-slider-thumb {
+            background-color: #fff;
+        }
+
+        #range3::-webkit-slider-runnable-track {
+            background: linear-gradient(90deg, #fff, #fff) 0 100% no-repeat content-box;
+        }
+
+        #range3::-webkit-slider-thumb {
+            opacity: 0;
+        }
+
+        #range4 {
+            width: 450px;
+            left: -350px;
+            position: relative;
+        }
+
+        #range5 {
+            width: 150px;
+            left: -250px;
+            position: relative;
+        }
+    </style>
+
+
+    <div class="row hidden-sm hidden-md hidden-xs">
+        <div class="col-lg-2 col-lg-offset-2">Не владею</div>
+        <div class="col-lg-2">Использую готовые решения</div>
+        <div class="col-lg-3">Использую готовые решения и умею переделывать</div>
+        <div class="col-lg-2">Пишу сложный JS с нуля</div>
+
+        <div class="col-lg-8 col-lg-offset-2">
+            <input type="range" min="0" max="1000" value="0" id="range1">
+        </div>
+    </div>
+    <div class="row hidden-lg">
+
+
+        <div class="col-sm-2 col-sm-offset-2 col-xs-2 col-md-2 ">
+            <div style="height: 200px">
+                <input type="range" min="0" max="1000" value="0" id="range4" class="vertical-range">
+            </div>
+
+        </div>
+        <div class="col-md-offset-6 col-sm-offset-6 col-xs-offset-6 step-1">
+            Пишу сложный JS с нуля
+        </div>
+        <div class="col-md-offset-6 col-sm-offset-6 col-xs-offset-6 step-2">
+            Использую готовые решения и умею переделывать
+        </div>
+        <div class="col-md-offset-6 col-sm-offset-6 col-xs-offset-6 step-3">
+            Использую готовые решения
+        </div>
+        <div class="col-md-offset-6 col-sm-offset-6 col-xs-offset-6 step-4">
+            Не владею
+        </div>
+
+
+        <script>
+            //
+            // Style multiple input ranges
+            // WARNING: each input range need to have an unique ID
+            //
+
+            "use strict";
+            const DEBUG = true;
+
+            var inlineStyle = document.createElement('style');
+            var rangeSelector = document.querySelectorAll('[type=range]');
+            var inlineStyleContent = new Array;
+
+            document.body.appendChild(inlineStyle);
+
+            var eventname = new Event('input')
+
+            for (let item of rangeSelector) {
+                item.addEventListener('input', function () {
+                    let rangeInterval = Number(this.getAttribute('max') - this.getAttribute('min'));
+                    let rangePercent = (Number(this.value) + Math.abs(this.getAttribute('min'))) / rangeInterval * 100;
+
+                    DEBUG ? console.log("#" + this.id + ": " + rangePercent + "%") : ''; // for debug
+
+                    writeStyle({
+                        id: this.id,
+                        percent: rangePercent
+                    });
+                }, false);
+
+                item.dispatchEvent(eventname); // update bars at startup
+            }
+
+
+            /**
+             * Write Style element
+             *
+             * @param {object} obj id: HTML id, percent: value
+             */
+            function writeStyle(obj) {
+                var find = inlineStyleContent.map(x = > x.id
+            ).
+                indexOf(obj.id);
+                var styleText = "";
+
+                if (find === -1) {
+                    inlineStyleContent.push(obj)
+                } else {
+                    inlineStyleContent[find] = obj;
+                }
+
+                for (let item of inlineStyleContent) {
+                    styleText += '#' + item.id + '::-webkit-slider-runnable-track{background-size:' + item.percent + '% 100%} ';
+                }
+
+                inlineStyle.textContent = styleText;
+            }
+        </script>
+    </div>
+
+
+    <div class="row  text-center" style="margin-top: 120px;">
+        <img src="{% static 'images/icon_4.png' %}"/>
+    </div>
+
+    <div class="row about-inf text-center">Расскажите о себе</div>
+
+    <div class="row about-second-inf text-center">
+        <div class="col-lg-4 col-lg-offset-4">
+            Напишите несколько предложений, чем привлекла наша вакансия <br> и что вы ожидаете
+            от работы у нас.
+        </div>
+    </div>
+
+    <div class="row about-message">
+        <div class="col-lg-4 col-lg-offset-4">
+            <div class="form-group">
+            <textarea class="form-control" type="textarea" id="message" placeholder="Понравилась тем, что"
+                      maxlength="140"
+                      rows="7"></textarea>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row text-center btn-ready">
+
+        <button type="button" id="submit" name="submit" class="btn btn-primary pull-center">Готово</button>
+
+    </div>
+
+
+    {% endblock %}
